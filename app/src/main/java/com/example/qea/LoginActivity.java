@@ -1,5 +1,6 @@
 package com.example.qea;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,11 @@ public class LoginActivity extends AppCompatActivity {
                     String res = db.ValidarLogin(username, password);
                     if(res.equals("")){
                         Toast.makeText(LoginActivity.this, "Login Ok", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(LoginActivity.this, Perfil.class);
+                        startActivity(i);
+
+
+
                     }else{
                         Toast.makeText(LoginActivity.this, "Login errado, tente novamente", Toast.LENGTH_SHORT).show();
                     }
