@@ -3,11 +3,11 @@ package com.example.qea;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Python extends AppCompatActivity {
+public class Python_perfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_python);
+        setContentView(R.layout.activity_python_perfil);
     }
 }

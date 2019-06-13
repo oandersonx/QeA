@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Python"></activity>
+        <activity android:name=".Python_perfil"></activity>
         <activity android:name=".Perfil" />
         <activity android:name=".RegistrarActivity" />
         <activity android:name=".LoginActivity" />

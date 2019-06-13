@@ -40,11 +40,8 @@ public class LoginActivity extends AppCompatActivity {
                     String res = db.ValidarLogin(username, password);
                     if(res.equals("")){
                         Toast.makeText(LoginActivity.this, "Login Ok", Toast.LENGTH_SHORT).show();
-                        Intent i = new Intent(LoginActivity.this, Perfil.class);
+                        Intent i = new Intent(getApplicationContext(), Perfil.class);
                         startActivity(i);
-
-
-
                     }else{
                         Toast.makeText(LoginActivity.this, "Login errado, tente novamente", Toast.LENGTH_SHORT).show();
                     }
